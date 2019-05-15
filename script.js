@@ -96,11 +96,21 @@ console.log(to);
 // Assigning and Declaring a class of Bank Account object, assign and declare a constructor function that carry two or three parameters. What we wanna achieve is this whenever someone credits/deposits or withdraw it will display the current balance.
 
 class AccountStatement {
-    constructor() {
+    constructor(balance) {
         this.balance = 0;
     }
 
+    deposit(depositAmount) {
 
+    }
+
+    withdraw(withdrawalAmount) {
+
+    }
+
+    get balance() {
+        return this.balance;
+    }
 }
 
 
