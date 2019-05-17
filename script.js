@@ -6,7 +6,7 @@ class BankAccount {
     }
 
     withdraw(amount) {
-        if (this.amount > amount && (this.amount - amount) > 1000) {
+        if (this.amount > amount && (this.amount - amount) < 1000) {
             this.amount -= amount;
         }
     }
@@ -192,10 +192,13 @@ Father.helicopter = 'I have a helicopter,sorry not sharing this';
 
 //---ES6
 class Father {
-    static helicopter = 'I have a helicopter,sorry not sharing this';
+    constructor() {
+        this.helicopter = ('I have a helicopter,sorry not sharing this');
+    }
+    
   }
   //prototype data properties must be defined outside of the ClassBody declaration
-  Father.prototype.car = 'I have a car';
+  Father.prototype.car = ('I have a car');
   
   
   
